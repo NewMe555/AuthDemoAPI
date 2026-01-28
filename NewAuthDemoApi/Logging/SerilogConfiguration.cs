@@ -39,7 +39,8 @@ namespace AuthDemoApi.Logging
   "[IP:{IP}] " +
   "{Message:lj}{NewLine}{Exception}"
         )
-        .CreateLogger();
+        
+        .CreateLogger(); 
         }
     
     

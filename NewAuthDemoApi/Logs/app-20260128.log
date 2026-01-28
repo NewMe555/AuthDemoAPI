@@ -1,0 +1,145 @@
+2026-01-28 14:03:17.580 +05:30 [INF] Application starting up...
+2026-01-28 14:04:04.607 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 990.6619 ms
+2026-01-28 16:11:22.581 +05:30 [INF] Application starting up...
+2026-01-28 16:13:53.299 +05:30 [INF] Application starting up...
+2026-01-28 16:16:26.645 +05:30 [INF] Application starting up...
+2026-01-28 16:17:08.136 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2026-01-28 16:21:38.015 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 52.4289 ms
+2026-01-28 16:21:38.164 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 37.8774 ms
+2026-01-28 16:22:27.676 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 27881.5000 ms
+2026-01-28 16:24:01.193 +05:30 [INF] HTTP GET /api/user/profile responded 401 in 16063.3843 ms
+2026-01-28 16:24:59.146 +05:30 [INF] HTTP GET /api/user/profile responded 200 in 21567.1140 ms
+2026-01-28 16:42:51.657 +05:30 [INF] Application starting up...
+2026-01-28 16:42:53.730 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2026-01-28 16:43:05.084 +05:30 [INF] HTTP POST /api/auth/login responded 200 in 3094.0157 ms
+2026-01-28 16:43:26.741 +05:30 [INF] HTTP GET /api/user/profile responded 200 in 3429.0695 ms
+[2026-01-28 16:49:15.999 +05:30 INF] [] Application starting up...
+[2026-01-28 16:49:27.767 +05:30 INF] [2f70c465-aa41-4301-958e-f2fc97982a8b] HTTP GET /api/user/profile responded 200 in 763.8195 ms
+[2026-01-28 16:49:37.535 +05:30 INF] [91235597-b61b-408c-9b1c-aeac43df10f3] HTTP GET /api/user/profile responded 200 in 25.6620 ms
+[2026-01-28 17:25:09.799 +05:30 INF] [60693d93-1211-4b55-aa04-2f7374b68246] HTTP POST /api/user/crash responded 404 in 3.3091 ms
+[2026-01-28 17:25:38.534 +05:30 INF] [90a22e4d-757c-486a-b304-1afb60da068b] HTTP POST /api/user/Crash responded 404 in 0.4646 ms
+[2026-01-28 17:25:59.126 +05:30 INF] [fc8f2ad3-f13b-44b2-a9ed-fcc63b41bbd7] HTTP GET /api/user/Crash responded 404 in 1.0037 ms
+[2026-01-28 17:26:00.835 +05:30 INF] [fe9dd45e-27b2-4967-9062-572abe4661e0] HTTP GET /api/user/Crash responded 404 in 0.4320 ms
+[2026-01-28 17:28:25.411 +05:30 INF] [7cd27e23-d745-403a-b64d-3e09cb410d24] HTTP GET /swagger/index.html responded 200 in 43.0198 ms
+[2026-01-28 17:28:25.533 +05:30 INF] [606e16d6-3070-4108-ae0a-6a181789dca0] HTTP GET /swagger/v1/swagger.json responded 200 in 34.5731 ms
+[2026-01-28 17:28:26.058 +05:30 INF] [2ee1d996-d756-47d2-8f57-b560103a84cb] HTTP GET /swagger/index.html responded 200 in 0.9493 ms
+[2026-01-28 17:28:26.105 +05:30 INF] [92d1f31e-af2d-4e37-91bd-2e67a1e9c8c3] HTTP GET /swagger/v1/swagger.json responded 200 in 1.5886 ms
+[2026-01-28 17:28:26.287 +05:30 INF] [17a89d14-fa5e-457a-b841-e626af99d513] HTTP GET /swagger/index.html responded 200 in 0.3457 ms
+[2026-01-28 17:28:26.324 +05:30 INF] [1bf0348c-eb3b-41bb-937d-59f8cc348afa] HTTP GET /swagger/v1/swagger.json responded 200 in 3.3395 ms
+[2026-01-28 17:28:26.478 +05:30 INF] [d6884889-1525-4b12-a40c-2bc35763c41c] HTTP GET /swagger/index.html responded 200 in 0.2302 ms
+[2026-01-28 17:28:26.511 +05:30 INF] [a3bb305c-9a0a-4f91-9f85-0f6542c05909] HTTP GET /swagger/v1/swagger.json responded 200 in 2.1080 ms
+ationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2026-01-28 17:28:00.963 +05:30 INF] [] Application starting up...
+[2026-01-28 17:28:14.655 +05:30 WRN] [] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+[2026-01-28 17:28:14.718 +05:30 ERR] [] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:6001: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (48): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2026-01-28 17:28:58.311 +05:30 INF] [] Application starting up...
+[2026-01-28 17:28:58.808 +05:30 WRN] [] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+[2026-01-28 17:29:13.298 +05:30 INF] [58dfedcd-ec38-4665-ab44-d4a1e77432c6] HTTP GET /api/user/crash responded 401 in 32.7600 ms
+[2026-01-28 17:29:15.094 +05:30 INF] [50ffb016-8443-4862-baa3-b88634138d89] HTTP GET /swagger/index.html responded 200 in 61.9059 ms
+[2026-01-28 17:29:15.196 +05:30 INF] [6cb6cdce-8dd0-47cc-9b69-9c5bae13bf48] HTTP GET /swagger/v1/swagger.json responded 200 in 38.4195 ms
+[2026-01-28 17:29:27.698 +05:30 INF] [6460d957-4f28-43ba-b5e7-e1dd16c13fc3] HTTP POST /api/auth/login responded 200 in 5855.9808 ms
+[2026-01-28 17:29:57.725 +05:30 INF] [a3737305-068f-486e-91b9-89a0d26959d0] HTTP GET /api/user/crash responded 401 in 29.6730 ms
+[2026-01-28 17:30:16.916 +05:30 ERR] [56ba9f33-aa1b-4b6a-b5db-a547f9e1d06f] HTTP GET /api/user/crash responded 500 in 12633.9130 ms
+System.Exception: Test crash
+   at AuthDemoApi.Controllers.UserController.Crash() in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Controllers/UserController.cs:line 51
+   at lambda_method146(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-01-28 17:30:20.313 +05:30 ERR] [56ba9f33-aa1b-4b6a-b5db-a547f9e1d06f] Unhandled exception occured. Path:/api/user/crash
+System.Exception: Test crash
+   at AuthDemoApi.Controllers.UserController.Crash() in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Controllers/UserController.cs:line 51
+   at lambda_method146(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AuthDemoApi.Middleware.GlobalExceptionMiddleware.Invoke(HttpContext context) in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Middleware/GlobalExceptionMiddleware.cs:line 24
+[18:00:42 INF] [Req:] [Trace:] [User:] [Email:] [IP:] Application starting up...
+[18:00:53 INF] [Req:342bb0f2-4b06-41b1-8cc8-802282a1b4b3] [Trace:052c499f988b5937a3124137abb01246] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP POST /api/auth/login responded 200 in 962.5770 ms
+[18:01:08 INF] [Req:bbdbb3ab-23ad-4825-8f69-0fb5e6371084] [Trace:acb7e6fb2a2f423ecc75b432c2226e0d] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP POST /api/Auth/logout responded 200 in 50.2058 ms
+[18:04:25 INF] [Req:] [Trace:] [User:] [Email:] [IP:] Application starting up...
+[18:04:45 INF] [Req:cf2470fe-4563-4dd5-a466-5019c5125275] [Trace:09e4f25b0afa1adcc5b69f525942b657] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP POST /api/auth/login responded 200 in 976.2375 ms
+[18:04:58 INF] [Req:c4aaeec7-d2fb-4ae7-931d-874444b134ac] [Trace:b2fa4b9bf64072c2b56ba706d8613034] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP GET /api/user/profile responded 200 in 18.4539 ms
+[18:06:30 INF] [Req:] [Trace:] [User:] [Email:] [IP:] Application starting up...
+[18:06:35 INF] [Req:96bef275-2cf2-497a-bd2d-9e101b017341] [Trace:f70e2b684e24db59ae75ca9cdb01cc34] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP GET /api/user/profile responded 200 in 683.1918 ms
+[18:11:48 INF] [Req:] [Trace:] [User:] [Email:] [IP:] Application starting up...
+[18:13:01 INF] [Req:cb499a60-6866-4238-b316-ef721cb04f3a] [Trace:3f8d716185f33abb51d084daa546d920] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP POST /api/auth/login responded 200 in 965.8688 ms
+[18:20:06 INF] [Req:] [Trace:] [UserId:] [Username:] [IP:] Application starting up...
+[18:20:10 INF] [Req:cbf21e60-a070-4bb2-b145-894be81cc345] [Trace:7d2a0939d0ea4e6b5a12cb960a3dcd5f] [UserId:] [Username:] [IP:::1] HTTP POST /api/auth/login responded 200 in 854.1766 ms
+[18:25:52 INF] [Req:] [Trace:] [UserId:] [Username:] [IP:] Application starting up...
+[18:25:56 INF] [Req:c66bbe1b-574d-4021-b0e9-c9f680757874] [Trace:5d3466673e82f03e4adcd581c3584333] [UserId:] [Username:Anonymous] [IP:::1] HTTP POST /api/auth/login responded 200 in 889.4257 ms
+[18:29:46 INF] [Req:] [Trace:] [UserId:] [Username:] [IP:] Application starting up...
+[18:29:51 INF] [Req:83fa0127-92c5-462f-b20d-973496373bce] [Trace:930f0a0b160e4c56e13600df7c0e1ec4] [UserId:Anonymous] [Username:Anonymous] [IP:::1] HTTP POST /api/auth/login responded 200 in 913.4408 ms
+[18:33:36 INF] [Req:] [Trace:] [UserId:] [Username:] [IP:] Application starting up...
+[18:33:48 INF] [Req:2fdec633-7875-4b5c-9d1b-a4a6ef6807fb] [Trace:22aff226df6aa1216cfa0706daaff514] [UserId:Anonymous] [Username:Anonymous] [IP:::1] HTTP POST /api/auth/login responded 200 in 874.3306 ms
+[18:36:02 INF] [Req:5e8d6e5f-0b40-442e-aff6-4894acd81864] [Trace:33a2af59055492f10301c28a438d95f3] [UserId:1] [Username:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 35.0345 ms

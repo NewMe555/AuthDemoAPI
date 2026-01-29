@@ -78,7 +78,20 @@ app.UseMiddleware<CorrelationIdMiddleware>();
 //app.UseHttpsRedirection();
 app.UseMiddleware<UserContextMiddleware>();
 app.UseMiddleware<GlobalExceptionMiddleware>();
-app.UseSerilogRequestLogging();//serilog
+app.UseSerilogRequestLogging(options =>
+{
+    // Don't log 2xx and 3xx as Information
+    options.GetLevel = (httpContext, elapsed, ex) =>
+    {
+        if (ex != null || httpContext.Response.StatusCode >= 500)
+            return Serilog.Events.LogEventLevel.Error;
+
+        if (httpContext.Response.StatusCode >= 400)
+            return Serilog.Events.LogEventLevel.Warning;
+
+        return Serilog.Events.LogEventLevel.Debug;
+    };
+});//serilog
 app.UseRateLimiter();
 // Map controller endpoints
 app.MapControllers(); // ✅ This is the key line for your AuthController to work

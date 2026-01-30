@@ -25,7 +25,29 @@ namespace AuthDemoApi.Middleware
             }
             catch(Exception ex)
             {
-                await HandleException(context,ex);
+                _logger.LogError(ex,"Unhandled exception caught in middleware Path:{Path}",
+                context.Request.Path);
+                
+    // 🔥 If DB is down → return 503
+    if (ex is Microsoft.Data.SqlClient.SqlException)
+    {
+        context.Response.StatusCode = StatusCodes.Status503ServiceUnavailable;
+
+        await context.Response.WriteAsJsonAsync(new
+        {
+            message = "Service temporarily unavailable. Please try again later."
+        });
+
+        return;
+    }
+
+    // 🔹 For all other errors → 500
+    context.Response.StatusCode = StatusCodes.Status500InternalServerError;
+
+    await context.Response.WriteAsJsonAsync(new
+    {
+        message = "Something went wrong."
+    });
             }
         }
 

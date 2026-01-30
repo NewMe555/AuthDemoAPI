@@ -1,6 +1,5 @@
 using Serilog;
 using Serilog.Events;
-using System.Diagnostics;
 
 
 namespace AuthDemoApi.Logging
@@ -17,7 +16,7 @@ namespace AuthDemoApi.Logging
         // Ignore framework noise
         .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
         .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Error)
-
+        .MinimumLevel.Override("Microsoft.Data.SqlClient", LogEventLevel.Fatal)
         // Enrich context (CorrelationId, User, etc.)
         .Enrich.FromLogContext()
 

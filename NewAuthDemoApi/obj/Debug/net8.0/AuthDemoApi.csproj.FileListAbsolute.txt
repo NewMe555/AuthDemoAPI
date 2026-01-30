@@ -441,3 +441,4 @@
 /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/bin/Debug/net8.0/System.Text.Encodings.Web.dll
 /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/bin/Debug/net8.0/System.Text.Json.dll
 /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/obj/Debug/net8.0/AuthDemoApi.sourcelink.json

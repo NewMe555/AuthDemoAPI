@@ -7,6 +7,7 @@ using AuthDemoApi.Logging;
 using AuthDemoApi.Middleware;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using Serilog.Events;
 
 SerilogConfiguration.Configure();
 Serilog.Log.Information("Application starting up...");
@@ -83,13 +84,13 @@ app.UseSerilogRequestLogging(options =>
     // Don't log 2xx and 3xx as Information
     options.GetLevel = (httpContext, elapsed, ex) =>
     {
-        if (ex != null || httpContext.Response.StatusCode >= 500)
-            return Serilog.Events.LogEventLevel.Error;
+        if (httpContext.Response.StatusCode >= 500)
+            return LogEventLevel.Error;
 
         if (httpContext.Response.StatusCode >= 400)
-            return Serilog.Events.LogEventLevel.Warning;
+            return LogEventLevel.Warning;
 
-        return Serilog.Events.LogEventLevel.Debug;
+        return LogEventLevel.Information;
     };
 });//serilog
 app.UseRateLimiter();

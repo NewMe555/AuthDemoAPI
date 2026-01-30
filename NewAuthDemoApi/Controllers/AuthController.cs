@@ -24,6 +24,7 @@ namespace AuthDemoApi.Controllers
 [EnableRateLimiting("login")]
 public async Task<IActionResult> Login([FromBody] LoginDto dto)
 {
+    
     // 1️⃣ Find user
     var user = await _db.Users.FirstOrDefaultAsync(u => u.Username == dto.username);
 

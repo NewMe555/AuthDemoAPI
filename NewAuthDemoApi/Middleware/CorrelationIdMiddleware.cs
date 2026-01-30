@@ -23,7 +23,7 @@ namespace AuthDemoApi.Middleware
             //attach to all logs in the request
              using (LogContext.PushProperty("CorrelationId", correlationId))
 
-            using (Serilog.Context.LogContext.PushProperty("CorrelationId", correlationId))
+            using (LogContext.PushProperty("CorrelationId", correlationId))
             {
                 await _next(context);
             }

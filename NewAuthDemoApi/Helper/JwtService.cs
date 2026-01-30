@@ -57,7 +57,7 @@ namespace AuthDemoApi.Helper
                 issuer: _config["jwt:Issuer"],
                 audience: _config["jwt:Audience"],
                 claims:claims,
-                expires:DateTime.UtcNow.AddMinutes(2),//✅ 2 minutes
+                expires:DateTime.UtcNow.AddMinutes(5),//✅ 5 minutes
                 signingCredentials: cred
                 );
                //✅ Creates the actual JWT object with:

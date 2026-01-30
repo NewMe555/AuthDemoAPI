@@ -431,3 +431,25 @@ Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instanc
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at AuthDemoApi.Middleware.GlobalExceptionMiddleware.Invoke(HttpContext context) in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Middleware/GlobalExceptionMiddleware.cs:line 24
 ClientConnectionId:00000000-0000-0000-0000-000000000000
+[2026-01-30 15:14:31 ERR] [Req:6a796317-3dc9-4892-a98b-d94b0e4bdda9] [Trace:a1e645a0a027564db7e53b99a684526b] [User:1] [Email:vaibhavi] [IP:::1] Unhandled exception caught in middleware Path:/api/user/crash
+System.Exception: Test crash
+   at AuthDemoApi.Controllers.UserController.Crash() in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Controllers/UserController.cs:line 51
+   at lambda_method146(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AuthDemoApi.Middleware.GlobalExceptionMiddleware.Invoke(HttpContext context) in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Middleware/GlobalExceptionMiddleware.cs:line 24

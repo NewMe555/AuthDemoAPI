@@ -5,6 +5,7 @@ using AuthDemoApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AuthDemoApi.Controllers
 {
@@ -157,7 +158,7 @@ public async Task<IActionResult> Refresh()
 //Graceful error handling → returns meaningful message if DB fails.
 
 //Optional token expiry update → ensures refresh token is not valid anymore.
-       
+       [Authorize]
         [HttpPost("logout")]
 public async Task<IActionResult> Logout()
 {

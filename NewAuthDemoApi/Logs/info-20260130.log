@@ -617,3 +617,58 @@ ClientConnectionId:00000000-0000-0000-0000-000000000000
 [2026-01-30 14:56:40 INF] [Req:87cb8f76-2b59-40cb-b0e6-7c514e0cb7ce] [Trace:60eef216c84b39c10dbd3d7d2345afc8] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP POST /api/Auth/logout responded 200 in 46.4302 ms
 [2026-01-30 14:56:43 INF] [Req:fca513c4-4d9f-428e-812c-d89496644c88] [Trace:9cfb305649ba080635c5c647ffcc0927] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 5.1745 ms
 [2026-01-30 14:56:46 INF] [Req:fe05ee25-6434-495e-a197-9e0b217b8038] [Trace:70df43afa1b85139e18e4cd43a6e5482] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 4.2902 ms
+[2026-01-30 15:13:58 INF] [Req:] [Trace:] [User:] [Email:] [IP:] Application starting up...
+[2026-01-30 15:14:16 INF] [Req:0e581b20-24d7-4868-a055-c3f08c2b809b] [Trace:3d99f67ae30a9a18dfbba84775b23d75] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP POST /api/auth/login responded 200 in 956.8535 ms
+[2026-01-30 15:14:31 INF] [Req:6a796317-3dc9-4892-a98b-d94b0e4bdda9] [Trace:a1e645a0a027564db7e53b99a684526b] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/crash responded 500 in 3.2772 ms
+System.Exception: Test crash
+   at AuthDemoApi.Controllers.UserController.Crash() in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Controllers/UserController.cs:line 51
+   at lambda_method146(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[2026-01-30 15:14:31 ERR] [Req:6a796317-3dc9-4892-a98b-d94b0e4bdda9] [Trace:a1e645a0a027564db7e53b99a684526b] [User:1] [Email:vaibhavi] [IP:::1] Unhandled exception caught in middleware Path:/api/user/crash
+System.Exception: Test crash
+   at AuthDemoApi.Controllers.UserController.Crash() in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Controllers/UserController.cs:line 51
+   at lambda_method146(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AuthDemoApi.Middleware.GlobalExceptionMiddleware.Invoke(HttpContext context) in /Users/vaibhavirai/Projects/React/New folder/NewApi.netocre/NewAPI/NewAuthDemoApi/Middleware/GlobalExceptionMiddleware.cs:line 24
+[2026-01-30 15:15:01 INF] [Req:e43c4824-4bbd-47b4-9c0a-75539025f5b6] [Trace:9e810e2482557a63bbd4418653ac96cb] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 30.2178 ms
+[2026-01-30 15:15:23 INF] [Req:cface3d1-3eca-4cb3-91d4-595885827d98] [Trace:96ac80b8fc6130caf69ebd61fb6c6f69] [User:1] [Email:vaibhavi] [IP:::1] HTTP POST /api/Auth/logout responded 200 in 49.2298 ms
+[2026-01-30 15:15:30 INF] [Req:6caae243-a445-48d1-b9b7-1bfcc577a2cf] [Trace:d41760d6e5a356f1d4f23fe19f04972b] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 9.8465 ms
+[2026-01-30 15:15:31 INF] [Req:7242dcd5-3055-4b28-a85d-20256a1069ce] [Trace:b41a42f0781b6723295ee19f141df20f] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 5.2544 ms
+[2026-01-30 15:41:15 INF] [Req:] [Trace:] [User:] [Email:] [IP:] Application starting up...
+[2026-01-30 15:41:29 INF] [Req:e98ac87f-a283-427f-a043-301b3aa92cb1] [Trace:6b3bff806a2e291e90c75e5a9a043fdf] [User:Anonymous] [Email:Anonymous] [IP:::1] HTTP POST /api/auth/login responded 200 in 847.9198 ms
+[2026-01-30 15:41:57 INF] [Req:40f0bde9-addc-429b-b436-c79a73f26960] [Trace:11c4785abc35472fae2803740b2c9140] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 19.7695 ms
+[2026-01-30 15:42:04 INF] [Req:6f4cdb97-2c36-4c84-9eb3-cf9d571df27c] [Trace:a4b862012ee46da85b51151654317856] [User:1] [Email:vaibhavi] [IP:::1] HTTP POST /api/Auth/logout responded 200 in 41.3302 ms
+[2026-01-30 15:43:06 INF] [Req:ce6e9453-6e3a-4e61-9d6e-1865f708ed0f] [Trace:f8bd397410f5675927405767f414acba] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 8.0538 ms
+[2026-01-30 15:43:08 INF] [Req:c5166a8c-e726-4827-8b8d-914a00c00e1b] [Trace:b5b006497093a539311a24d90232ab50] [User:1] [Email:vaibhavi] [IP:::1] HTTP GET /api/user/profile responded 200 in 6.0265 ms

@@ -1,0 +1,5 @@
+.env
+Logs
+AuthDemoApi.sln
+AuthDemoApi.http
+appsettings.Development.json
